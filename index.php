@@ -1,9 +1,9 @@
 <?php
-$post = new Post();
+//include header
+get_header();
+//header
+if ( !is_single() ) {
+    load_page('home');
+}
+get_footer();
 ?>
-
-<?php if ( empty($post) ): ?>
-    <h2>Tidak Ada Postingan</h2>
-<?php else:  ?>
-
-<?php endif; ?>
